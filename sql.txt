@@ -1,0 +1,10 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS blog_api;
+USE blog_api;
+
+-- Posts Table
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Post ID
+    title VARCHAR(255) NOT NULL,        -- Post title
+    content VARCHAR(255) NOT NULL       -- Post content
+);
